@@ -11,9 +11,14 @@ class Person(object):
   def say_something(self):
     print("hello")
 
+  def __del__(self):
+    print("good bye")
+
 # person = Person()
 person = Person("AA")
-# person.say_something()
+person.say_something()
+del person
+print("######")
 
 # def person(name):
 #   if name == "a":
